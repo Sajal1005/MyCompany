@@ -8,6 +8,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.navbar{
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(50px);
+}
+
 body::-webkit-scrollbar {
     width: 1em;
   }
