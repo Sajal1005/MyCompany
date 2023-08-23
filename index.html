@@ -89,7 +89,7 @@
 
         <div class="main-nav mt-6 flex items-stretch justify-between mt-4">
             <h1 class="text-2xl font-medium ml-8 mt-2">My<span class="text-green-400">Company</span></h1>
-            <div class="mr-16 mt-1.5 border-2  border-green-300 flex justify-between p-2 font-medium rounded-md">
+            <div class=" cursor-pointer mr-16 mt-1.5 border-2  border-green-300 flex justify-between p-2 font-medium rounded-md">
                 <div id="cart-icon" class="flex">
                   <h1 class="mt-0.5"> Cart </h1>
                   <div class="ml-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 ml-2 text-gray-600">
@@ -103,21 +103,21 @@
                     Items in Trolley
                   </h2>
                   <div class="cart-content">
-                    <div class="cart-box">
-                      <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="" class="cart-img">
+                    <!-- <div class="cart-box"> -->
+                      <!-- <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="" class="cart-img">
                       <div class="detail-box">
                         <div class="cart-product-title">Basic Tee</div>
-                        <div class="cart-price">$50</div>
+                        <div class="cart-price">$0</div>
                         <input type="number" value="1" class="cart-quantity">
                       </div>
-                      <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="red" class="w-6 h-6">
+                      <svg class="cart-remove" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="red" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
-                      </svg>                      
-                    </div>
+                      </svg>                       -->
+                    <!-- </div> -->
                   </div>
                   <div class="total">
                     <div class="total-title">Total</div>
-                    <div class="total-price">$50</div>
+                    <div class="total-price">$ 0</div>
                   </div>
                   <button class="btn-buy">Lock in Your Purchase</button>
                   <svg id="close-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -208,77 +208,69 @@
       </p>
       
 
+
       <div id="lpshop" class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 ">
         <div class="group relative">
           <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full product-img">
           </div>
           <div class="mt-4 flex justify-between">
             <div>
-              <h3 class="text-sm text-gray-700">
-                <a href="#">
-                  <span aria-hidden="true" class="absolute inset-0"></span>
+              <h3 class="text-sm text-gray-700 product-title">
                   Basic Tee
-                </a>
               </h3>
               <p class="mt-1 text-sm text-gray-500">Black</p>
             </div>
-            <p class="text-sm font-medium text-gray-900">$35</p>
-            <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+            <p class="text-sm font-medium text-gray-900 price">$ 35</p>
+            <button href="" class="btn btn-primary mt-3 add-cart cursor-pointer">Add to Cart</button>
           </div>
         </div>
         <!-- <div class="group relative">
           <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-02.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-02.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full product-img">
           </div>
           <div class="mt-4 flex justify-between">
             <div>
-              <h3 class="text-sm text-gray-700">
-                <a href="#">
+              <h3 class="text-sm text-gray-700 product-title">
                   <span aria-hidden="true" class="absolute inset-0"></span>
                   Basic Tee
-                </a>
               </h3>
               <p class="mt-1 text-sm text-gray-500">Aspen White</p>
             </div>
-            <p class="text-sm font-medium text-gray-900">$35</p>
-            <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+            <p class="text-sm font-medium text-gray-900 price">$35</p>
+            <button href="" class="btn btn-primary mt-3 add-cart">Add to Cart</button>
           </div>
         </div>
         <div class="group relative">
           <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-03.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-03.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full product-img">
           </div>
           <div class="mt-4 flex justify-between">
             <div>
-              <h3 class="text-sm text-gray-700">
-                <a href="#">
+              <h3 class="text-sm text-gray-700 product-title">
                   <span aria-hidden="true" class="absolute inset-0"></span>
                   Basic Tee
-                </a>
               </h3>
               <p class="mt-1 text-sm text-gray-500">Charcoal</p>
             </div>
-            <p class="text-sm font-medium text-gray-900">$35</p>
-            <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+            <p class="text-sm font-medium text-gray-900 price">$35</p>
+            <button href="" class="btn btn-primary mt-3 add-cart">Add to Cart</button>
           </div>
         </div>
         <div class="group relative">
           <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-04.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-04.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full product-img">
           </div>
           <div class="mt-4 flex justify-between">
             <div>
-              <h3 class="text-sm text-gray-700">
-                <a href="#">
+              <h3 class="text-sm text-gray-700 product-title">
                   <span aria-hidden="true" class="absolute inset-0"></span>
                   Artwork Tee
-                </a>
               </h3>
               <p class="mt-1 text-sm text-gray-500">Iso Dots</p>
             </div>
-            <p class="text-sm font-medium text-gray-900">$40</p>
-            <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+            <p class="text-sm font-medium text-gray-900 price">$40</p>
+            <button href="" class="btn btn-primary mt-3 add-cart">Add to Cart</button>
           </div>
         </div>
          -->
@@ -288,74 +280,66 @@
     <div class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
       <!-- <div class="group relative">
         <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-          <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+          <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full product-img">
         </div>
         <div class="mt-4 flex justify-between">
           <div>
-            <h3 class="text-sm text-gray-700">
-              <a href="#">
+            <h3 class="text-sm text-gray-700 product-title">
                 <span aria-hidden="true" class="absolute inset-0"></span>
                 Basic Tee
-              </a>
             </h3>
             <p class="mt-1 text-sm text-gray-500">Black</p>
           </div>
-          <p class="text-sm font-medium text-gray-900">$35</p>
-          <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+          <p class="text-sm font-medium text-gray-900 price">$35</p>
+          <button href="" class="btn btn-primary mt-3 add-cart">Add to Cart</button>
         </div>
       </div>
       <div class="group relative">
         <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-          <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-02.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+          <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-02.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full product-img">
         </div>
         <div class="mt-4 flex justify-between">
           <div>
-            <h3 class="text-sm text-gray-700">
-              <a href="#">
+            <h3 class="text-sm text-gray-700 product-title">
                 <span aria-hidden="true" class="absolute inset-0"></span>
                 Basic Tee
-              </a>
             </h3>
             <p class="mt-1 text-sm text-gray-500">Aspen White</p>
           </div>
-          <p class="text-sm font-medium text-gray-900">$35</p>
-          <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+          <p class="text-sm font-medium text-gray-900 price">$35</p>
+          <button href="" class="btn btn-primary mt-3 add-cart">Add to Cart</button>
         </div>
       </div>
       <div class="group relative">
         <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-          <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-03.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+          <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-03.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full product-img">
         </div>
         <div class="mt-4 flex justify-between">
           <div>
-            <h3 class="text-sm text-gray-700">
-              <a href="#">
+            <h3 class="text-sm text-gray-700 product-title">
                 <span aria-hidden="true" class="absolute inset-0"></span>
                 Basic Tee
-              </a>
             </h3>
             <p class="mt-1 text-sm text-gray-500">Charcoal</p>
           </div>
-          <p class="text-sm font-medium text-gray-900">$35</p>
-          <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+          <p class="text-sm font-medium text-gray-900 price">$35</p>
+          <button href="" class="btn btn-primary mt-3 add-cart">Add to Cart</button>
         </div>
       </div>
       <div class="group relative">
         <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-          <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-04.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+          <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-04.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full product-img">
         </div>
         <div class="mt-4 flex justify-between">
           <div>
-            <h3 class="text-sm text-gray-700">
-              <a href="#">
+            <h3 class="text-sm text-gray-700 product-title">
                 <span aria-hidden="true" class="absolute inset-0"></span>
                 Artwork Tee
-              </a>
             </h3>
             <p class="mt-1 text-sm text-gray-500">Iso Dots</p>
           </div>
-          <p class="text-sm font-medium text-gray-900">$40</p>
-          <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+          <p class="text-sm font-medium text-gray-900 price">$40</p>
+          <button href="" class="btn btn-primary mt-3 add-cart">Add to Cart</button>
         </div>
       </div> -->
       
@@ -395,9 +379,9 @@
                 <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
               </div>
               <div class="flex justify-between">
-                <h3 class="mt-4 text-sm text-gray-700">Earthen Bottle</h3>
+                <h3 class="mt-4 text-sm text-gray-700 product-title">Earthen Bottle</h3>
                 <p class="mt-4 text-lg font-medium text-gray-900">$48</p>
-                <p href="#" class="btn btn-primary mt-3">Add to Cart</p>
+                <button href="" class="btn btn-primary mt-3 add-cart">Add to Cart</button>
               </div>
               
             </a>
@@ -406,9 +390,9 @@
                 <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="h-full w-full object-cover object-center group-hover:opacity-75">
               </div>
               <div class="flex justify-between">
-              <h3 class="mt-4 text-sm text-gray-700">Nomad Tumbler</h3>
+              <h3 class="mt-4 text-sm text-gray-700 product-title">Nomad Tumbler</h3>
               <p class="mt-4 text-lg font-medium text-gray-900">$35</p>
-              <p href="#" class="btn btn-primary mt-3">Add to Cart</p>
+              <button href="" class="btn btn-primary mt-3 add-cart">Add to Cart</button>
               </div>
             </a>
             <a href="#" class="group">
@@ -416,9 +400,9 @@
                 <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg" alt="Person using a pen to cross a task off a productivity paper card." class="h-full w-full object-cover object-center group-hover:opacity-75">
               </div>
               <div class="flex justify-between">
-              <h3 class="mt-4 text-sm text-gray-700">Focus Paper Refill</h3>
+              <h3 class="mt-4 text-sm text-gray-700 product-title">Focus Paper Refill</h3>
               <p class="mt-4 text-lg font-medium text-gray-900">$89</p>
-              <p href="#" class="btn btn-primary mt-3">Add to Cart</p>
+              <button href="" class="btn btn-primary mt-3 add-cart">Add to Cart</button>
               </div>
             </a>
             <a href="#" class="group">
@@ -426,9 +410,9 @@
                 <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
               </div>
               <div class="flex justify-between">
-              <h3 class="mt-4 text-sm text-gray-700">Mechanical Pencil</h3>
+              <h3 class="mt-4 text-sm text-gray-700 product-title">Mechanical Pencil</h3>
               <p class="mt-4 text-lg font-medium text-gray-900">$35</p>
-              <p href="#" class="btn btn-primary mt-3">Add to Cart</p>
+              <button href="" class="btn btn-primary mt-3 add-cart">Add to Cart</button>
               </div>
             </a>
             <a href="#" class="group">
@@ -436,9 +420,9 @@
                 <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
               </div>
               <div class="flex justify-between">
-                <h3 class="mt-4 text-sm text-gray-700">Earthen Bottle</h3>
+                <h3 class="mt-4 text-sm text-gray-700 product-title">Earthen Bottle</h3>
                 <p class="mt-4 text-lg font-medium text-gray-900">$48</p>
-                <p href="#" class="btn btn-primary mt-3">Add to Cart</p>
+                <button href="" class="btn btn-primary mt-3 add-cart">Add to Cart</button>
               </div>
               
             </a>
@@ -447,9 +431,9 @@
                 <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="h-full w-full object-cover object-center group-hover:opacity-75">
               </div>
               <div class="flex justify-between">
-              <h3 class="mt-4 text-sm text-gray-700">Nomad Tumbler</h3>
+              <h3 class="mt-4 text-sm text-gray-700 product-title">Nomad Tumbler</h3>
               <p class="mt-4 text-lg font-medium text-gray-900">$35</p>
-              <p href="#" class="btn btn-primary mt-3">Add to Cart</p>
+              <button href="" class="btn btn-primary mt-3 add-cart">Add to Cart</button>
               </div>
             </a>
           </div>
