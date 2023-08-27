@@ -46,7 +46,7 @@ function ready(){
 //Remove Items from Cart
 function removeCartItem(event){
   var buttonClicked = event.target;
-  buttonClicked.parentElement.remove();
+  buttonClicked.parentElement.parentElement.remove();
   updatetotal();
 }
 
