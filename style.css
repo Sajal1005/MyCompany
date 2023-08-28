@@ -36,6 +36,9 @@ body::-webkit-scrollbar {
     background: #ffff;
     box-shadow: -2px 0 4px hsl(0, 4%, 15% / 10%);
     z-index: 100;
+    /* box-sizing: border-box;
+    padding-bottom: 20px; */
+    
 } 
 
 .cart.active{
@@ -58,6 +61,7 @@ body::-webkit-scrollbar {
   margin-top: 1 rem;
   border: 1px solid lightgreen;
   border-radius: 0.25rem;
+  width: 100%;
 }
 
 .cart-img{
@@ -69,6 +73,14 @@ body::-webkit-scrollbar {
 
 .cart-remove{
   width: 25px;
+}
+
+.cart-content{
+  height: 350px;
+  overflow-y: scroll;
+}
+.cart-content::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
 }
 
 .detail-box{
@@ -139,3 +151,8 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 
+.finalCart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
