@@ -7,11 +7,7 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
-/* 
-.navbar{
-  background: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(50px);
-} */
+
 
 body::-webkit-scrollbar {
     width: 1em;
@@ -80,7 +76,7 @@ body::-webkit-scrollbar {
   overflow-y: scroll;
 }
 .cart-content::-webkit-scrollbar { 
-  display: none;  /* Safari and Chrome */
+  display: none;  
 }
 
 .detail-box{
