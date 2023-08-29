@@ -89,7 +89,7 @@ function addProductToCart(title, price, productImg){
         var quantityInput = cartItemsNames[i].parentElement.querySelector(".cart-quantity");
         var currentQuantity = parseInt(quantityInput.value);
         quantityInput.value = currentQuantity + 1;
-        updateCartTotal();
+        updatetotal();
         return;
     }
 }
