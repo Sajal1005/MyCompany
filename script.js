@@ -25,7 +25,7 @@ const cartList = [];
 function ready(){
   //Remove Items form Cart
   var removeCartButtons = document.getElementsByClassName('cart-remove')
-  console.log(removeCartButtons)
+  // console.log(removeCartButtons)
   for (var i=0; i < removeCartButtons.length; i++){
       var button = removeCartButtons[i]
       button.addEventListener('click', removeCartItem);
@@ -82,7 +82,7 @@ function addProductToCart(title, price, productImg){
   cartShopBox.classList.add("cart-box");
   var cartItems = document.getElementsByClassName('cart-content')[0];
   var cartItemsNames = cartItems.getElementsByClassName("cart-product-title");
-  document.querySelector('#cart-num').innerHTML=cartItemsNames.length+1;
+  
   
   for (var i = 0; i < cartItemsNames.length; i++) {
     if (cartItemsNames[i].innerHTML.localeCompare(title) === 0) {
@@ -93,6 +93,7 @@ function addProductToCart(title, price, productImg){
         return;
     }
 }
+document.querySelector('#cart-num').innerHTML=cartItemsNames.length+1;
   var cartBoxContent = `
                   
   <img height="100px" class="cart-img" src="${productImg}" alt="">
