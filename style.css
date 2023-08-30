@@ -187,3 +187,11 @@ body::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
 }
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   opacity: 1;
+
+} 
+
